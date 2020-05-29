@@ -5,7 +5,11 @@ VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HarryPotterFanFicLogin", "HarryPotterFanFicLogin\HarryPotterFanFicLogin.csproj", "{68C6D452-7544-4664-9D80-E622A7F9D3C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HarryPotterFanFic.Data", "HarryPotterFanFic.Data\HarryPotterFanFic.Data.csproj", "{4CF5671E-2DF9-4AAD-B9E9-61421D4C28A9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HarryPotterFanFicLogin.Data", "HarryPotterFanFicLogin.Data\HarryPotterFanFicLogin.Data.csproj", "{37231427-8976-4B8F-8BE2-C333401FD4FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HarryPotterFanFicLogin.Interfaces", "HarryPotterFanFicLogin.Interfaces\HarryPotterFanFicLogin.Interfaces.csproj", "{664AB7B6-BD93-43AA-A7EC-DC0816441672}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HarryPotterFanFicLogin.Logic", "HarryPotterFanFicLogin.Logic\HarryPotterFanFicLogin.Logic.csproj", "{1DAF7AC0-A022-41F8-94AF-ACD22549362E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +21,18 @@ Global
 		{68C6D452-7544-4664-9D80-E622A7F9D3C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68C6D452-7544-4664-9D80-E622A7F9D3C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68C6D452-7544-4664-9D80-E622A7F9D3C1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4CF5671E-2DF9-4AAD-B9E9-61421D4C28A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4CF5671E-2DF9-4AAD-B9E9-61421D4C28A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4CF5671E-2DF9-4AAD-B9E9-61421D4C28A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4CF5671E-2DF9-4AAD-B9E9-61421D4C28A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37231427-8976-4B8F-8BE2-C333401FD4FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37231427-8976-4B8F-8BE2-C333401FD4FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37231427-8976-4B8F-8BE2-C333401FD4FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37231427-8976-4B8F-8BE2-C333401FD4FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{664AB7B6-BD93-43AA-A7EC-DC0816441672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{664AB7B6-BD93-43AA-A7EC-DC0816441672}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{664AB7B6-BD93-43AA-A7EC-DC0816441672}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{664AB7B6-BD93-43AA-A7EC-DC0816441672}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DAF7AC0-A022-41F8-94AF-ACD22549362E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DAF7AC0-A022-41F8-94AF-ACD22549362E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DAF7AC0-A022-41F8-94AF-ACD22549362E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DAF7AC0-A022-41F8-94AF-ACD22549362E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

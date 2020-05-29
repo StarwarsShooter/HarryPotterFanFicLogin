@@ -12,6 +12,13 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.3" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+    <PackageReference Include="MySql.Data" Version="8.0.20" />
+    <PackageReference Include="MySqlConnector" Version="0.65.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HarryPotterFanFicLogin.Interfaces\HarryPotterFanFicLogin.Interfaces.csproj" />
+    <ProjectReference Include="..\HarryPotterFanFicLogin.Logic\HarryPotterFanFicLogin.Logic.csproj" />
   </ItemGroup>
 
 </Project>

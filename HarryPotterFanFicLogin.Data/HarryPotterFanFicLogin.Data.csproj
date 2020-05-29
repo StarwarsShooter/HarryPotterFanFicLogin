@@ -6,7 +6,10 @@
 
   <ItemGroup>
     <PackageReference Include="MySql.Data" Version="8.0.20" />
-    <PackageReference Include="MySqlConnector" Version="0.65.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HarryPotterFanFicLogin.Interfaces\HarryPotterFanFicLogin.Interfaces.csproj" />
   </ItemGroup>
 
 </Project>

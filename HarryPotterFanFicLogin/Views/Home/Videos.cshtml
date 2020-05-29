@@ -1,8 +1,72 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Videos";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center" style="border-left: 1px solid white; border-right: 1px solid white; margin-top: -20px; height: 1100px;">
+    <h1 class="display-4" style="top: 10px;">My video series</h1>
+    <p class="ATWtext">The After the war series (ATW for short) is the first series I started on my channel.
+        The name already says it, it is about the life of Harry and Ginny after the war.
+        Of course Voldemort is defeated, but they won't be having a calm life now, it'll be very action packed.
+        There are a lot of things coming, unexpected things, plottwists, action and of course love.
+        How further into the story, how better it'll get.
+        Many things happen and I try to explain every single one of them.
+        There are also crossovers with other movies or series, like Star Wars.</p>
+    <iframe width="392" height="221" src="https://www.youtube.com/embed/ZaJNCXo_fx0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="atwvid"></iframe>
+    <p style="display: inline; position: relative; top: 20px;">Amount of current episodes: </p><p id="ATW" style="display: inline; position: relative; top: 20px;"></p>
+
+    <p class="MTBtext">The Meant to be series (MTB for short) is the 2nd series I started.
+        It starts in year 2 where the students are getting petrified and Harry and Ron are going to save Ginny.
+        This series is based on the idea what would happen if Harry and Ginny got together around this time.
+        There aren't big changes compared to the original story at the beginning, they come later on.
+        This is also known as my cuteness series, ATW is my action series.</p>
+    <iframe width="392" height="221" src="https://www.youtube.com/embed/ULKYogsx4cI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="mtbvid"></iframe>
+    <p style="display: inline; position: relative; top: 20px;">Amount of current episodes: </p><p id="MTB" style="display: inline; position: relative; top: 20px;"></p>
+
+    <p class="SHtext">Star Hamilton is my character I play as when I roleplay.
+        It's not related to me in real life at all luckily.
+        It's a very dark and depressing story, the start sets a point on what kind of dark things that happen later on.
+        It's about Star Hamilton who ends up the last of his family at a young age, he only has Edward his family phoenix left.
+        His past haunts him in many ways, but Edward and some people help him even when he's very introverted
+        The series is very depressing, but later on it gets better and happier, with some happy moments in between.
+        This is my most unique series, but other characters we know like Ginny will show up when Star goes to Hogwarts.</p>
+    <iframe width="392" height="221" src="https://www.youtube.com/embed/fnLBjTotBRc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="starvid"></iframe>
+    <p style="display: inline; position: relative; top: 40px;">Amount of current episodes: </p><p id="SH" style="display: inline; position: relative; top: 40px;"></p>
+
 </div>
+
+<script type="text/javascript">
+    var ATW = new Date();
+    ATW.setFullYear(2020, 4, 1, 6);
+    var MTB = new Date();
+    MTB.setFullYear(2020, 4, 3, 6);
+    var Star = new Date();
+    Star.setFullYear(2020, 4, 6, 6);
+    var today = new Date();
+
+    function ATW_time(ATW, today) {
+        var diff =(today.getTime() - ATW.getTime()) / 1000;
+        diff /= (60 * 60 * 24 * 7);
+        var diffATW = 125 + Math.abs(Math.floor(diff));
+        return diffATW;
+    }
+
+    document.getElementById("ATW").innerHTML = ATW_time(ATW, today);
+
+    function MTB_time(MTB, today) {
+        var diff = (today.getTime() - MTB.getTime()) / 1000;
+        diff /= (60 * 60 * 24 * 7);
+        var diffMTB = 63 + Math.abs(Math.floor(diff));
+        return diffMTB;
+    }
+
+    document.getElementById("MTB").innerHTML = MTB_time(MTB, today);
+
+    function Star_time(Star, today) {
+        var diff = (today.getTime() - Star.getTime()) / 1000;
+        diff /= (60 * 60 * 24 * 7);
+        var diffStar = 43 + Math.abs(Math.floor(diff));
+        return diffStar;
+    }
+
+    document.getElementById("SH").innerHTML = Star_time(Star, today);
+</script>
